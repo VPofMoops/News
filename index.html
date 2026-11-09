@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- UnitedKingdomOfMoopsioid -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Friday News</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+:root{
+  --light-green: #d8f8dd;
+  --paper: #f5f7fa;
+  --card: #ffffff;
+  --text: #25333f;
+  --muted: #5d6c7b;
+  --line: #000000;
+  --radius: 14px;
+}
+ 
+*{ box-sizing: border-box; }
+ 
+body{
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+ 
+.wrap{
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+ 
+/* ---------- header ---------- */
+.site-header{
+  background: #ffffff;
+  color: var(--text);
+  padding: 64px 0 52px;
+  border: 2px solid #000000;
+  border-bottom: 5px solid var(--light-green);
+}
+ 
+.kicker{
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 4px;
+  margin-bottom: 18px;
+}
+ 
+h1, h2{
+  font-family: 'UnifrakturMaguntia', 'Courier New', Courier, monospace;
+  font-weight: 400;
+}
+ 
+.site-header h1{
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 4.2rem);
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+ 
+.tagline{
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  max-width: 52ch;
+}
+ 
+/* ---------- main ---------- */
+main{ padding: 44px 0 12px; }
+ 
+.headline{
+  color: #000000;
+  font-size: clamp(2rem, 5.5vw, 3.2rem);
+  line-height: 1.15;
+  margin: 0 0 10px;
+  letter-spacing: -0.3px;
+  font-weight: 400;
+}
+ 
+hr.rule{
+  border: 0;
+  height: 2px;
+  width: 56px;
+  background: var(--light-green);
+  margin: 0 0 22px;
+  border-radius: 2px;
+}
+ 
+.card{
+  background: var(--card);
+  border: 2px solid #000000;
+  border-radius: var(--radius);
+  padding: 26px 28px;
+  margin-bottom: 22px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .05),
+              0 8px 24px -18px rgba(0, 0, 0, .45);
+}
+ 
+.card p{ margin: 0; }
+.card p + p{ margin-top: 14px; }
+ 
+/* ---------- back button ---------- */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  padding: 13px 26px;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  transition: background .18s ease, color .18s ease,
+              transform .18s ease, box-shadow .18s ease;
+  box-shadow: 0 6px 18px -12px rgba(0, 0, 0, .9);
+}
+ 
+.btn::before{ content: "←"; font-size: 16px; }
+ 
+.btn:hover,
+.btn:focus-visible{
+  background: var(--light-green);
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px -12px rgba(0, 0, 0, .75);
+}
+ 
+.btn:focus-visible{
+  outline: 2px solid #000000;
+  outline-offset: 3px;
+}
+ 
+/* ---------- footer ---------- */
+.site-footer{
+  border: 2px solid #000000;
+  padding: 22px 0 44px;
+  color: var(--muted);
+  font-size: 13px;
+}
+ 
+@media (max-width: 560px){
+  .site-header{ padding: 46px 0 38px; }
+  .card{ padding: 20px 18px; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <span class="kicker">Friday News</span>
+    <h1>Friday News</h1>
+    <p class="tagline">The latest from the United Kingdom of Moopsioid.</p>
+  </div>
+</header>
+ 
+<main class="wrap">
+  <section id="introduction">
+    <h2 class="headline">Muzz clan slowly dies!</h2>
+    <hr class="rule">
+    <div class="card">
+      <p>As of Friday, there was no sign of the Muzz clan except the leader. The leader says, “The Muzz clan is still alive.” On Friday. There have been no laws introduced recently yet, but the United Kingdom of Moopsioid is still going. To wrap it up with our possible victory against the Muzz clan, our first enemy.</p>
+    </div>
+  </section>
+ 
+  <section class="card">
+    <a class="btn"
+       href="https://vpofmoops.github.io/Moops-site/"
+       target="_blank"
+       rel="noopener noreferrer">
+      Back to Moops
+    </a>
+  </section>
+</main>
+ 
+<footer class="site-footer">
+  <div class="wrap">
+    United Kingdom of Moopsioid
+  </div>
+</footer>
+</body>
+</html>
